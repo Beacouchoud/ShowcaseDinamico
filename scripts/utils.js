@@ -1,0 +1,2 @@
+const createProduct = () => {}
+const deleteProduct = () => {}
