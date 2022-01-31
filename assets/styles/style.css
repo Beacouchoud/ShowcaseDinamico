@@ -42,7 +42,7 @@ img {
     grid-template-areas: 
       "showcase showcase showcase order"
       ". . . order"
-      "chart chart chart order";
+      "cart cart cart order";
     justify-items: stretch; 
     align-content: stretch;  
 }
@@ -59,9 +59,9 @@ img {
     background-position: left bottom;
 }
 
-#chart {
+#cart {
     height: 30vh;
-    grid-area: chart;
+    grid-area: cart;
 
     background-image: url("../img/metallic-table.png");
     
