@@ -1,0 +1,93 @@
+body {
+    background-color: #C0DE7F;
+    color: #373737;
+}
+
+
+
+.scroll-div {
+    max-height: 50vh;
+    overflow: auto;
+    background-color: transparent;
+    scrollbar-width: thin;
+    scrollbar-color: #f7f0f5 ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ab8476;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f7f0f5;
+    background-color: #C0DE7F;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    cursor: move;
+    filter: drop-shadow(10px 10px 10px #373737);
+    height: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    /* grid-template-rows: 30vh 10vh 30vh; */
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+      "showcase showcase showcase order"
+      ". . . order"
+      "chart chart chart order";
+    justify-items: stretch; 
+    align-content: stretch;  
+}
+
+#showcase {
+    height: 30vh;
+    grid-area: showcase;
+    background-image: url("../img/wood-stand.png");
+    
+    background-position: bottom; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: 50vh ;
+    background-attachment: local;
+    background-position: left bottom;
+}
+
+#chart {
+    height: 30vh;
+    grid-area: chart;
+
+    background-image: url("../img/metallic-table.png");
+    
+    background-position: bottom; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: 250vh ;
+    background-attachment: local;
+    background-position: left bottom;
+}
+
+#order {
+    min-height: 65vh;
+    grid-area: order;
+    align-self: stretch;
+
+    background-image: url("../img/receipt-paper.png");
+    
+    background-position: left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover ;
+    background-attachment: local;
+    background-position: left bottom;
+
+    
+}
+
+#order::-webkit-scrollbar-thumb {
+    box-shadow: inset 4px 0px 0px rgba(0, 0, 0, 0.2);
+}
