@@ -10,7 +10,8 @@
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"
-  />
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css">
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -19,10 +20,44 @@
 </head>
 <body>
     <header>
-        <!-- TODO: Titulo y Precio total carrito / Sticky  -->
+        <h1 class="my-5 text-uppercase text-center">Fruit Stand</h1>
     </header>
     <main>
         <!-- TODO: Drag and drop (expositor y carrito) /Overflow-y: scroll -->
+        <div class="container">
+            
+            <div class="grid-container my-auto">
+                    <!-- imgs -->
+                <div id="showcase" ondrop="removeElementFromChart(event)" ondragover="allowDrop(event)" class="scroll-div d-flex flex-row align-items-start px-5">
+                    <!-- <p class="h2 text-center">Products</p> -->
+                    <img id="apple" title="2.5 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Apple.png">
+                    <img id="apricot" title="4.0 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Apricot.png">
+                    <img id="banana" title="2.8 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Bananas.png">
+                    <img id="cherry" title="3.5 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Cherries.png">
+                    <img id="coconut" title="4.2 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Coconut.png">
+                    <img id="grape" title="2.0 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Grapes.png">
+                    <img id="kiwi" title="3.2 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Kiwi.png">
+                    <img id="mango" title="4.2 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Mango.png">
+                    <img id="orange" title="2.8 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Orange.png">
+                    <img id="peaches" title="4.5 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Peaches.png">
+                    <img id="pineapple" title="4.0 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Pineapple.png">
+                    <img id="pomegranade" title="4.5 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Pomegranate.png">
+                    <img id="strawberry" title="3.8 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Strawberry.png">
+                    <img id="watermelon" title="3.0 €/kg" class="mt-2 mx-3" ondragstart="drag(event)" draggable="true" src="./assets/img/Watermelon.png">
+                </div>
+        
+                <div id="chart" ondrop="addElementToChart(event)" ondragover="allowDrop(event)" class="scroll-div d-flex flex-row align-items-center px-5">
+                    <!-- <p class="h2 text-center">Chart</p> -->
+                </div>
+
+                <div id="order" class="scroll-div d-flex flex-column align-items-center list-group list-group-flush">
+                    <p class="h2 text-center">Order</p>
+                    <p id="price" class="h4 text-center mt-auto">Total price: <span id="totalPrice">00,00</span>€</p>
+                </div>
+
+            </div>
+            
+        </div>   
     </main>
     <footer>
         <!-- TODO: Botón vaciar carrito / Sticky-->
