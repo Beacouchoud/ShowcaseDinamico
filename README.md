@@ -33,7 +33,7 @@ Taking into account the requirements, we concluded that this would be the minimu
 ## Technologies
 [↑ Table of contents](#table-of-contents)
 
-For the development of the frontend, HTML5 + CSS has been used with the inclusion of JavaScript nomenclature EcmaScript 6.
+For the development of the dynamic showcase, HTML5 + CSS and Bootstrap 5 has been used with the inclusion of JavaScript nomenclature EcmaScript 6.
 
 Of course, the use of Drag&Drop technology has been implemented.
 
