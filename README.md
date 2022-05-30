@@ -47,4 +47,8 @@ As an essential requirement, the repository have a Readme complete and a varied 
 
 
 
+https://user-images.githubusercontent.com/34965770/171007793-2a25c85c-a9ff-43ac-8d30-1a63fc4e7d4c.mp4
+
+
+
 ### [↑ To the top](#kata-02-dynamic-showcase)
