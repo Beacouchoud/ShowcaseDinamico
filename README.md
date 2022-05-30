@@ -45,7 +45,7 @@ As an essential requirement, the repository have a Readme complete and a varied 
 ## Demo
 [↑ Table of contents](#table-of-contents)
 
-
+GitHub Pages: [Dynamic Showcase](https://beacouchoud.github.io/ShowcaseDinamico/)
 
 https://user-images.githubusercontent.com/34965770/171007793-2a25c85c-a9ff-43ac-8d30-1a63fc4e7d4c.mp4
 
